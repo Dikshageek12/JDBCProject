@@ -8,7 +8,7 @@ import java.sql.Statement;
 public class View_All {
   public void ViewStudents() throws Exception {
     Class.forName("com.mysql.cj.jdbc.Driver");
-     Connection connect=DriverManager.getConnection("jdbc:mysql://localhost:3306/Student123","root","Royal123blue@");
+     Connection connect=DriverManager.getConnection("jdbc:mysql://localhost:3306/Student123","root","************");
     Statement stmt=connect.createStatement();
      ResultSet rs=stmt.executeQuery("select id,name,course from students");
      while(rs.next()){

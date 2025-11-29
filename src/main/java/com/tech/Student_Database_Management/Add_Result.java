@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Add_Result {
   public void AddResult(Scanner sc) throws Exception {
     Class.forName("com.mysql.cj.jdbc.Driver");
-    Connection connect=DriverManager.getConnection("jdbc:mysql://localhost:3306/student123","root","Royal123blue@");
+    Connection connect=DriverManager.getConnection("jdbc:mysql://localhost:3306/student123","root","********");
     Statement stmt=connect.createStatement();
     System.out.println("Enter student id");
     String id=sc.nextLine();
